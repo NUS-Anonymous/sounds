@@ -30,11 +30,42 @@ def sine_tone(frequency, duration, volume=1, sample_rate=22050):
     stream.close()
     p.terminate()
 
-sine_tone(
-    # see http://www.phy.mtu.edu/~suits/notefreqs.html
-    frequency=440.00, # Hz, waves per second A4
-    duration=0.1, # seconds to play sound
-    volume=.01, # 0..1 how loud it is
-    # see http://en.wikipedia.org/wiki/Bit_rate#Audio
-    sample_rate=22050 # number of samples per second
-)
+def bitZero():
+    sine_tone(
+        # see http://www.phy.mtu.edu/~suits/notefreqs.html
+        frequency=600.00, # Hz, waves per second A4
+        duration=1.0, # seconds to play sound
+        volume=0.1, # 0..1 how loud it is
+        # see http://en.wikipedia.org/wiki/Bit_rate#Audio
+        sample_rate=10000 # number of samples per second
+    )
+def bitOne():
+    sine_tone(
+        # see http://www.phy.mtu.edu/~suits/notefreqs.html
+        frequency=440.00, # Hz, waves per second A4
+        duration=1.0, # seconds to play sound
+        volume=0.1, # 0..1 how loud it is
+        # see http://en.wikipedia.org/wiki/Bit_rate#Audio
+        sample_rate=10000 # number of samples per second
+    )
+# Starting Bit
+bitOne()
+bitOne()
+bitOne()
+bitOne()
+
+bitOne()
+bitOne()
+bitZero()
+bitZero()
+
+bitOne()
+bitOne()
+bitZero()
+bitZero()
+
+# Ending Bit
+bitOne()
+bitOne()
+bitOne()
+bitOne()
