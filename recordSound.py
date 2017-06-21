@@ -5,7 +5,7 @@ from struct import pack
 import pyaudio
 import wave
 
-THRESHOLD = 200
+THRESHOLD = 500
 CHUNK_SIZE = 1024
 FORMAT = pyaudio.paInt16
 RATE = 44100
@@ -116,5 +116,5 @@ def record_to_file(path):
 
 if __name__ == '__main__':
     print("please speak a word into the microphone")
-    record_to_file('demo.wav')
+    record_to_file('demo1.wav')
     print("done - result written to demo.wav")

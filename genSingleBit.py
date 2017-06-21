@@ -53,17 +53,16 @@ bitOne()
 bitOne()
 bitOne()
 bitOne()
-
+#one Bit
 bitOne()
 bitOne()
 bitZero()
 bitZero()
-
+#onebit
 bitOne()
 bitOne()
 bitZero()
 bitZero()
-
 # Ending Bit
 bitOne()
 bitOne()
